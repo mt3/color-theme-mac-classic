@@ -82,7 +82,7 @@
      ;;;; Emacs frame specific        
      ;; Mode-line
      (mode-line-inactive ((t (:background "#ddd" :foreground "#000"))))
-     (mode-line ((t (:background "#1F3852" :foreground "#fff"))))
+     (mode-line ((t (:background "#2A358D" :foreground "#fff"))))
 
      ;; Selection highlight
      (highlight ((t (:background "#426BEE"  ))))
