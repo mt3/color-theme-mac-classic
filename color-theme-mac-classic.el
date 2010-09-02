@@ -24,17 +24,48 @@
    '(color-theme-mac-classic
      
      ((foreground-color . "#000")
-      (background-color . "#fff"))
+      (background-color . "#fff")
+      (background-mode  . "#fff")
+      (border-color     . "#fff")
+      (cursor-color     . "#A7A7A7")
+      (mouse-color      . "siennal"))
      
-     (default ((t (nil))))
+     (default ((t (:background "#fff" :foreground "#000"))))
+     
+     (border-glyph ((t (nil))))
 
-     (font-lock-keyword-face ((t (:foreground "#2C2CF6")))) 
-     
-     (font-lock-comment-face ((t (:foreground "#B2B2B2")))) 
+     ;; Comment
+     (font-lock-comment-face ((t (:foreground "#B2B2B2" :italic t)))) 
      (font-lock-comment-delimiter-face ((t (:foreground "#B2B2B2"))))
+    
+     ;; Keyword
+     (font-lock-keyword-face ((t (:foreground "#2C2CF6" :bold t)))) 
+    
+     ;; User-defined constant
+     (font-lock-builtin-face ((t (:foreground "#D61619" :bold t))))
+
+     ;; Variables
+     (font-lock-variable-name-face ((t (:foreground "#3596A4"))))
+
+     ;; Constant
+     (font-lock-constant-face ((t (:foreground "#D61619" :bold t))))
+     (font-lock-reference-face ((t (:foreground "#7175F0"))))
      
-     (font-lock-string-face ((t (:foreground "#007B22")))) 
-	  
-     )))
+     ;; Type
+     (font-lock-type-face ((t (:foreground "#7175F0"))))
+     
+     ;; String
+     (font-lock-string-face ((t (:foreground "#007B22"))))
+
+     ;; Preprocessor line
+     (font-lock-preprocessor-face ((t (:foreground "#3596A4"))))
+
+     ;; Function name
+     (font-lock-function-name-face ((t (:foreground "#1B1CAB" :bold t))))
+
+     ;; Documentation string
+     (font-lock-doc-string-face ((t (:foreground "#B2B2B2"))))
+
+)))
 
 (provide 'color-theme-mac-classic)
