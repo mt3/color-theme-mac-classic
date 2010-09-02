@@ -34,8 +34,8 @@
      
      ((foreground-color . "#000")
       (background-color . "#fff")
-      (background-mode  . light)
-      (border-color     . white)
+      (background-mode  . dark)
+      (border-color     . "#000")
       (cursor-color     . "#A7A7A7")
       (mouse-color      . "sienna1"))
      
@@ -82,12 +82,12 @@
      ;;;; Emacs frame specific        
      ;; Mode-line
      (mode-line-inactive ((t (:background "#ddd" :foreground "#000"))))
-     (mode-line ((t (:background "#95C3F1" :foreground "#000"))))
+     (mode-line ((t (:background "#1F3852" :foreground "#fff"))))
 
      ;; Selection highlight
-     (highlight ((t (:background "#426BEE"))))
-     (highline-face ((t (:background "#fff"))))
-     
+     (highlight ((t (:background "#426BEE"  ))))
+     (highline-face ((t (:background "#426BEE" ))))
+
      ;; Text Highlight
      (region ((t (:background "#E4F1FE"))))
 
