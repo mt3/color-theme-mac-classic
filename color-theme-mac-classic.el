@@ -27,7 +27,7 @@
 ;; MA 02111-1307 USA;
 
 (defun color-theme-mac-classic ()
-  "Color theme by Jason Watson, based off the TextMate Mac Classic theme."
+  "Color theme by Jason Watson, based off the TextMate Mac Classic theme, created 2010-09-01"
   (interactive)
   (color-theme-install
    '(color-theme-mac-classic
@@ -81,8 +81,9 @@
 
      ;;;; Emacs frame specific        
      ;; Mode-line
-     (mode-line ((t (:background "#426BEE" :foreground "#fff"))))
-     
+     (mode-line-inactive ((t (:background "#ddd" :foreground "#000"))))
+     (mode-line ((t (:background "#95C3F1" :foreground "#000"))))
+
      ;; Selection highlight
      (highlight ((t (:background "#426BEE"))))
      (highline-face ((t (:background "#fff"))))
@@ -95,7 +96,13 @@
 
      ;; Frame
      (fringe ((t (:background "#fff"))))
-
+     
+     ;; Navigation
+     (minibuffer-prompt ((t (:foreground "#000"))))
+     (ido-subdir ((t (:foreground "#D61619" :bold t))))
+     (ido-first-match ((t (:foreground "#007B22" :bold t))))
+     (ido-only-match ((t (:foreground "#007B22" :bold :italic t))))
+     
      ;; Etc.
      (left-margin ((t (nil))))
      (toolbar ((t (nil))))
