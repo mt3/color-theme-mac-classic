@@ -25,7 +25,7 @@
      
      ((foreground-color . "#000")
       (background-color . "#fff")
-      (background-mode  . "#fff")
+      (background-mode  . light)
       (border-color     . "#fff")
       (cursor-color     . "#A7A7A7")
       (mouse-color      . "siennal"))
@@ -66,6 +66,9 @@
      ;; Documentation string
      (font-lock-doc-string-face ((t (:foreground "#B2B2B2"))))
 
+     ;; Regexp
+     (font-lock-regexp-grouping-backslash ((t (:foreground "#00BD41"))))
+    
 )))
 
 (provide 'color-theme-mac-classic)
