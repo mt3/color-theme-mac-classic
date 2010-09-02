@@ -1,6 +1,15 @@
 ;; color-theme-mac-classic.el -- a color theme that resembles the TextMate Mac Classic theme. 
 ;;
-;; Copyright (C) 2009-2010 Jason Watson <jbw@jbw.cc>
+;; To use add the following to your .emacs file (requires the color-theme package):
+;;
+;; (require 'color-theme)
+;; (color-theme-initialize)
+;; (load-file "~/.emacs.d/color-theme-mac-classic/color-theme-mac-classic.el")
+;; 
+;; And then to to activate:
+;; (color-theme-mac-classic)
+;; 
+;;Copyright (C) 2009-2010 Jason Watson <jbw@jbw.cc>
 ;;
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License as
@@ -26,14 +35,14 @@
      ((foreground-color . "#000")
       (background-color . "#fff")
       (background-mode  . light)
-      (border-color     . "#fff")
+      (border-color     . white)
       (cursor-color     . "#A7A7A7")
-      (mouse-color      . "siennal"))
+      (mouse-color      . "sienna1"))
      
-     (default ((t (:background "#fff" :foreground "#000"))))
-     
+     (default ((t (:background "#fff" :foreground "#000"))))  
      (border-glyph ((t (nil))))
 
+     ;;;; General 
      ;; Comment
      (font-lock-comment-face ((t (:foreground "#B2B2B2" :italic t)))) 
      (font-lock-comment-delimiter-face ((t (:foreground "#B2B2B2"))))
@@ -69,6 +78,30 @@
      ;; Regexp
      (font-lock-regexp-grouping-backslash ((t (:foreground "#00BD41"))))
     
+
+     ;;;; Emacs frame specific        
+     ;; Mode-line
+     (mode-line ((t (:background "#426BEE" :foreground "#fff"))))
+     
+     ;; Selection highlight
+     (highlight ((t (:background "#426BEE"))))
+     (highline-face ((t (:background "#fff"))))
+     
+     ;; Text Highlight
+     (region ((t (:background "#E4F1FE"))))
+
+     ;; Cursor
+     (text-cursor ((t (:background "aa0000" :foreground "black"))))
+
+     ;; Frame
+     (fringe ((t (:background "#fff"))))
+
+     ;; Etc.
+     (left-margin ((t (nil))))
+     (toolbar ((t (nil))))
+     (underline ((nil (:underline nil))))	  
+     (gui-element ((t (:background "#aa0000" :foreground "#00aa00"))))
+	  
 )))
 
 (provide 'color-theme-mac-classic)
