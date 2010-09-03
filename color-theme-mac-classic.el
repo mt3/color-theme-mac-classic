@@ -101,7 +101,7 @@
      (minibuffer-prompt ((t (:foreground "#000"))))
      (ido-subdir ((t (:foreground "#D61619" :bold t))))
      (ido-first-match ((t (:foreground "#007B22" :bold t))))
-     (ido-only-match ((t (:foreground "#007B22" :bold :italic t))))
+     (ido-only-match ((t (:foreground "#007B22" :bold t))))
      
      ;; Etc.
      (left-margin ((t (nil))))
