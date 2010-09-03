@@ -1,0 +1,9 @@
+h1. Mac Classic colour theme for Emacs.
+
+A emacs colour theme which resembles the TextMate Mac Classic colour theme.
+
+h1. Have a Look:
+
+!http://github.com/jbw/color-theme-mac-classic/raw/master/screenshot.png!
+
+
